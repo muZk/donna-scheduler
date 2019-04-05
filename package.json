@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "donna-pay": "donna pay -s sii"
+    "pay": "node pay.js"
   },
   "repository": {
     "type": "git",
