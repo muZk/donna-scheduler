@@ -11,6 +11,7 @@ function run () {
     return console.error('RUT is missing from ENV variables')
   }
 
+  console.info('Running pay SII function')
   pay(RUT, PASSWORD)
 }
 
