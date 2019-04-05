@@ -207,10 +207,10 @@ destroy@~1.0.4:
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
   integrity sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=
 
-donna-bot@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/donna-bot/-/donna-bot-0.5.0.tgz#e1d580baba407a2dff1950eb908b33e64af7a499"
-  integrity sha512-BiNhLk0dcpEaea0ySMNAqm3D1r8S1y+yrcr9b+c5bmS9OOH7UUOwckP0Oghyob8A6Hz9U6Selm4PQwkBzZzHhQ==
+donna-bot@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/donna-bot/-/donna-bot-0.5.1.tgz#119e73caeb70daef05e347193efc7991b56cb6f4"
+  integrity sha512-K1GjjGrMVn59EHEl3uH4sZB58G2N8710tC8pHRV48IpCTkwDdPIqZGxBKyVf6CVl7Rr+hJxVf+3yzP72hoH/Cw==
   dependencies:
     bluebird "^3.5.1"
     commander "^2.17.1"

@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/muZk/donna-scheduler#readme",
   "dependencies": {
-    "donna-bot": "^0.5.0",
+    "donna-bot": "^0.5.1",
     "express": "^4.16.4"
   }
 }
