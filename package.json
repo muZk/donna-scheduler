@@ -2,6 +2,9 @@
   "name": "donna-scheduler",
   "version": "1.0.0",
   "description": "Donna Scheduler to automatically pay Chilean taxes",
+  "engines": {
+    "node": "10.x"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
