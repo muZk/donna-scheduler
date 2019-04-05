@@ -12,7 +12,10 @@ function run () {
   }
 
   console.info('Running pay SII function')
+
   pay(RUT, PASSWORD)
+    .then(() => console.info('Success'))
+    .catch(() => console.error('Something went wrong'))
 }
 
 run()
