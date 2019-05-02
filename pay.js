@@ -28,7 +28,11 @@ function run () {
   const month = today.getMonth()
   const year = today.getFullYear()
 
-  return monthlyCheck
+  pay(RUT, PASSWORD)
+    .then(() => console.log('Success!') && process.exit())
+    .catch(e => logError(e) && process.exit(1))
+
+  /* return monthlyCheck
     .exists({ month, year })
     .then(exists => {
       if (exists) {
@@ -40,7 +44,7 @@ function run () {
       }
     })
     .then(() => process.exit())
-    .catch(e => logError(e) && process.exit(1))
+    .catch(e => logError(e) && process.exit(1)) */
 }
 
 run()
