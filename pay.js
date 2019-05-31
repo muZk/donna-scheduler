@@ -30,7 +30,7 @@ async function run () {
   }
 
   try {
-    // await pay(RUT, PASSWORD)
+    await pay(RUT, PASSWORD)
     console.info('Success')
     bot.sendMessage({
       chat_id: process.env.BOT_CHAT_ID,
