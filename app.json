@@ -1,0 +1,31 @@
+{
+  "name": "Donna Scheduler",
+  "description": "🇨🇱 Pay your taxes, automatically.",
+  "repository": "https://github.com/muZk/donna-scheduler",
+  "keywords": ["javascript", "automation", "chile", "taxes"],
+  "addons": ["mongolab:sandbox", "scheduler:standard"],
+  "image": "heroku/nodejs",
+  "buildpacks": [
+    {
+      "url": "https://github.com/jontewks/puppeteer-heroku-buildpack"
+    }
+  ],
+  "env": {
+    "BOT_CHAT_ID": {
+      "description": "Telegram CHAT ID where you want to receive notifications about yout payment",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Telegram BOT TOKEN that will send you the notification",
+      "required": true
+    },
+    "RUT": {
+      "description": "Your RUT (used to sign in in https://sii.cl)",
+      "required": true
+    },
+    "PASSWORD": {
+      "description": "Your PASSWORD (used to sign in in https://sii.cl)",
+      "required": true
+    }
+  }
+}
