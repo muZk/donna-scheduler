@@ -13,11 +13,11 @@
   "env": {
     "BOT_CHAT_ID": {
       "description": "Telegram CHAT ID where you want to receive notifications about yout payment",
-      "required": true
+      "required": false
     },
     "BOT_TOKEN": {
       "description": "Telegram BOT TOKEN that will send you the notification",
-      "required": true
+      "required": false
     },
     "RUT": {
       "description": "Your RUT (used to sign in in https://sii.cl)",

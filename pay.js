@@ -4,10 +4,6 @@ const telegram = require('telegram-bot-api')
 
 const logs = db.get('logs')
 
-const bot = new telegram({
-  token: process.env.BOT_TOKEN
-})
-
 async function run () {
   const { PASSWORD, RUT } = process.env
 
@@ -32,10 +28,20 @@ async function run () {
   try {
     await pay(RUT, PASSWORD)
     console.info('Success')
-    bot.sendMessage({
-      chat_id: process.env.BOT_CHAT_ID,
-      text: 'Listo! Tus impuestos del SII están pagados 🎉🎉🎉🎉'
-    })
+
+    const { BOT_TOKEN, BOT_CHAT_ID } = process.env
+
+    if (BOT_TOKEN && BOT_CHAT_ID) {
+      const bot = new telegram({
+        token: BOT_TOKEN
+      })
+
+      bot.sendMessage({
+        chat_id: BOT_CHAT_ID,
+        text: 'Listo! Tus impuestos del SII están pagados 🎉🎉🎉🎉'
+      })
+    }
+
     await logs.insert(currentMonth)
   } catch (e) {
     console.error('Something went wrong')
