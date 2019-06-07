@@ -44,9 +44,9 @@ Done 🎉 click "Save Job"
 
 Here is a description of the environment variables:
 
-- `RUT` and `PASSWORD`: your [SII](https://misiir.sii.cl/cgi_misii/siihome.cgi) credentials.
-- `MONGODB_URI`: a MongoDB URI.
-- `BOT_TOKEN` and `BOT_CHANNEL`: Telegram bot token and channel so you can receive a notification about a successfull payment. You can setup your own with [@botfather](https://telegram.me/botfather)
+- `RUT` and `PASSWORD`: your [SII](https://misiir.sii.cl/cgi_misii/siihome.cgi) credentials (**Required**).
+- `MONGODB_URI`: a MongoDB URI (**Required**).
+- `BOT_TOKEN` and `BOT_CHANNEL`: Telegram bot token and channel so you can receive a notification about a successfull payment. You can setup your own with [@botfather](https://telegram.me/botfather) (**Optional**).
 
 ## Requirements
 
