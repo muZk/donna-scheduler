@@ -56,4 +56,4 @@ _Don't know how to pay with PEC?_ Read more [here](https://medium.com/p/9c63604d
 
 ## Questions?
 
-Send me a Twitter DM ([@muZkx](https://twitter.com/muzkx)) or open a issue.
+Send me a Twitter DM ([@codewithnico](https://twitter.com/codewithnico)) or open a issue.
